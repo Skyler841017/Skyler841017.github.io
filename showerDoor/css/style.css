@@ -260,9 +260,11 @@ nav {
         border: 0;
         background: #1C1C1C;
         transition: all .2s; }
-      .menu__item a:hover::after {
-        animation: changeLetter .3s 1 linear;
-        width: 100%; }
+      .menu__item a:hover {
+        background-color: #fff; }
+        .menu__item a:hover::after {
+          animation: changeLetter .3s 1 linear;
+          width: 100%; }
 
 @keyframes changeLetter {
   0% {

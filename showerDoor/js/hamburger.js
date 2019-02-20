@@ -6,7 +6,6 @@ $(function() {
       $('.mobile-toggle').show();
       $('.menu').hide();
 
-
     } else {
       $('.mobile-toggle').hide();
       $('.menu').show();
