@@ -1,0 +1,83 @@
+// 樣式
+// color
+@mixin color($color:white) {
+  color: $color;
+}
+@mixin bgcolor($bgcolor:white) {
+  background-color: $bgcolor;
+}
+
+//rwd
+@mixin sm_under {
+  @media screen and (max-width: 540px) {
+    @content;
+  }
+}
+
+@mixin md_under {
+  @media screen and (max-width: 720px) {
+    @content;
+  }
+}
+
+@mixin lg_under {
+  @media screen and (max-width: 960px) {
+    @content;
+  }
+}
+
+@mixin xl_under {
+  @media screen and (max-width: 1550px) {
+    @content;
+  }
+}
+
+@mixin sm_over {
+  @media screen and (min-width: 540px) {
+    @content;
+  }
+}
+
+@mixin md_over {
+  @media screen and (min-width: 720px) {
+    @content;
+  }
+}
+
+@mixin lg_over {
+  @media screen and (min-width: 960px) {
+    @content;
+  }
+}
+
+@mixin xl_over {
+  @media screen and (min-width: 1550px) {
+    @content;
+  }
+}
+@mixin over($min-width) {
+  @media screen and (min-width: $min-width) {
+    @content;
+  }
+}
+@mixin under($max-width) {
+  @media screen and (max-width: $max-width) {
+    @content;
+  }
+}
+
+// down_button
+// @mixin big_box($bg) {
+//     width: 192px;
+//     height: 192px;
+//     background: $bg;
+//     display: inline-block;
+// }
+// @mixin small_box($bg) {
+//     width: 140px;
+//     height: 140px;
+//     background: ($bg);
+//     font-size: 30px;
+//     border: 3px,black,solid;
+//     margin: auto;
+// }

@@ -1,0 +1,286 @@
+.method_item {
+  max-width: 1530px;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 0 50px 0;
+
+  @include md_under {
+    padding: 0 0 20px 0;
+  }
+}
+
+.small_title {
+  border-radius: 10px 10px 0 0;
+  // margin: auto;
+  //   text-align: center;
+
+  h3 {
+    font-size: 30px;
+    line-height: 60px;
+    background: url("../imgs/small_title_star.png") no-repeat 5px 50%;
+    padding: 10px 30px 10px 60px;
+
+    @include md_under {
+      font-size: 20px;
+      line-height: 25px;
+      padding: 10px 50px 10px 60px;
+    }
+  }
+}
+
+.title_width1 {
+  width: 280px;
+
+  @include sm_under {
+    width: 100%;
+  }
+}
+
+.title_width2 {
+  width: 330px;
+
+  @include sm_under {
+    width: 100%;
+  }
+}
+
+.content {
+  border: 1px solid $primary_red;
+  text-align: justify;
+  padding: 50px 60px;
+  font-weight: normal;
+
+  p {
+    font-size: 24px;
+
+    @include md_under {
+      font-size: 16px;
+    }
+  }
+
+  @include sm_under {
+    padding: 50px 10px 50px 10px;
+  }
+}
+
+.ta1 {
+  text-align: center;
+}
+
+.popcorn {
+  width: 140px;
+  position: absolute;
+  left: 85%;
+  top: -20px;
+  @include xl_under {
+    width: 100px;
+    top: 35px;
+  }
+
+  @include lg_under {
+    left: 85%;
+    width: 70px;
+    top: 75px;
+  }
+  @include md_under {
+    top: 35px;
+  }
+
+  @include sm_under {
+    display: none;
+  }
+
+}
+
+.ta2 {
+  text-align: justify;
+}
+
+.content2 {
+  padding: 50px 50px 0 60px;
+  @include md_under {
+    padding: 20px 15px 0 15px;
+  }
+
+  @include sm_under {
+    padding: 30px 20px 0 20px;
+  }
+
+  p {
+    line-height: 40px;
+    letter-spacing: 1px;
+
+    @include sm_under {
+      line-height: 20px;
+    }
+  }
+
+  div {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  ul {
+    width: calc(100% / 3 * 2);
+    float: left;
+    font-size: 0;
+    margin: auto;
+
+    @include md_under {
+      width: 100%;
+    }
+  }
+
+  li {
+    display: inline-block;
+    width: 20%;
+
+    @include md_under {
+      width: calc(100% / 3);
+    }
+
+    img {
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  figure {
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
+    width: 30%;
+
+    @include md_under {
+      display: none;
+
+    }
+
+    img {
+      display: block;
+      border: 0;
+    }
+  }
+}
+
+//貼心小提醒title
+.reminder {
+  max-width: 1530px;
+  width: 80%;
+  margin: auto;
+
+
+
+  h3 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 25px;
+    line-height: 45px;
+    font-weight: bold;
+    position: relative;
+
+    @include md_under {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    .sweet_star {
+      width: 50px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -144px;
+
+      @include md_under {
+        margin-left: -80px;
+        width: 30px;
+        top: 5px;
+      }
+    }
+  }
+
+  P {
+    font-size: 24px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 45px;
+
+    @include md_under {
+      font-size: 16px;
+      margin-bottom: 15px;
+      text-align: justify;
+    }
+  }
+
+  figure {
+    width: 150px;
+    margin: 0 auto 50px auto;
+
+    @include md_under {
+      width: 100px;
+      margin: 0 auto 20px auto;
+    }
+  }
+}
+
+// 注意事項
+.method_item2 {
+  max-width: 1325px;
+  width: 90%;
+  margin: auto;
+  padding: 50px 60px;
+  // margin-bottom: 50px;
+
+  @include md_under {
+    padding: 10px;
+  }
+
+  h3 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+    line-height: 20px;
+
+    @include md_under {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+  }
+
+  
+
+  li {
+    font-size: 24px;
+    line-height: 40px;
+    margin-bottom: 45px;
+    padding-left: 28px;
+    position: relative;
+    font-weight: bold;
+    letter-spacing: 4px;
+    // text-align: justify;
+
+    @include md_under {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 20px;
+      padding-left: 20px;
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 14px;
+      left: 0;
+      width: 10px;
+      height: 10px;
+      background-color: #FFF;
+
+      @include md_under {
+        top: 5px;
+      }
+    }
+  }
+}

@@ -1,0 +1,392 @@
+td {
+  vertical-align: middle;
+  font-weight: bold;
+
+  ul {
+    font-weight: normal;
+
+    li {
+      display: block;
+    }
+  }
+}
+
+.introduction_table {
+  margin: 0 auto;
+  max-width: 1530px;
+  width: 95%;
+  display: flex;
+  position: relative;
+
+  @include md_under {
+    display: block;
+  }
+
+  header {
+    width: 70px;
+    float: left;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include xl_under {
+      width: 50px;
+      padding: 0 13px;
+    }
+
+    @include md_under {
+      width: 100%;
+      border-radius: 25px 25px 0 0;
+    }
+
+
+
+    h3 {
+      color: #fff;
+      font-size: 36px;
+      line-height: 50px;
+
+      @include xl_under {
+        font-size: 25px;
+        line-height: 30px;
+      }
+
+      @include lg_under {
+        font-size: 20px;
+        line-height: 35px;
+      }
+    }
+  }
+
+  .job_table {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    table-layout: fixed;
+
+    @include md_under {
+      margin: 0 0 20px 0;
+
+    }
+
+    thead {
+      width: 100%;
+
+      @include md_under {
+        display: block;
+      }
+
+      line-height: 20px;
+
+      tr {
+        width: 100%;
+
+        @include md_under {
+          display: block;
+        }
+
+        overflow: hidden;
+
+        th {
+          color: #fff;
+          font-size: 36px;
+          line-height: 75px;
+          letter-spacing: 5px;
+          text-align: center;
+
+          @include xl_under {
+            font-size: 30px;
+            line-height: 50px;
+          }
+
+          @include lg_under {
+            font-size: 20px;
+            line-height: 40px;
+          }
+
+          &:first-child {
+            width: 330px;
+            float: left;
+
+            @include lg_under {
+              width: 230px;
+            }
+
+            @include md_under {
+              width: 200px;
+            }
+          }
+
+          &:last-child {
+            width: calc(100% - 330px);
+            float: left;
+
+            @include lg_under {
+              width: calc(100% - 230px);
+            }
+
+            @include md_under {
+              width: calc(100% - 200px);
+            }
+          }
+        }
+      }
+    }
+
+    tbody {
+      background-color: #fff;
+      width: 100%;
+      display: table;
+
+
+
+      tr {
+        width: 100%;
+        border: 2px solid #dfdedf;
+      }
+
+      td {
+        border: 2px solid #dfdedf;
+      }
+
+      .title {
+        width: 80px;
+        font-size: 28px;
+        line-height: 40px;
+        padding: 0 25px;
+        text-align: center;
+
+        @include lg_under {
+          font-size: 20px;
+          line-height: 35px;
+          padding: 0 20px;
+          width: 40px;
+        }
+
+        @include md_under {
+          font-size: 16px;
+          padding: 0 16px;
+        }
+        @include sm_under {
+          padding: 0 5px;
+        }
+      }
+
+      .name {
+        font-size: 28px;
+        line-height: 40px;
+        text-align: center;
+        padding: 0 20px;
+        width: 250px;
+
+        @include lg_under {
+          font-size: 20px;
+          line-height: 35px;
+          padding: 0 0;
+          width: 150px;
+        }
+
+        @include md_under {
+          font-size: 16px;
+          width: 100px;
+        }
+      }
+
+      .filter {
+        width: calc(100% - 330px);
+
+        ul {
+          padding: 15px;
+
+          @include lg_under {
+            padding: 5px 10px 5px 0;
+          }
+        }
+
+        li {
+          font-size: 24px;
+          line-height: 40px;
+          text-indent: -120px;
+          margin-left: 120px;
+          letter-spacing: normal;
+
+          @include lg_under {
+            font-size: 16px;
+            line-height: 20px;
+            text-indent: -80px;
+            margin-left: 90px;
+
+            span {
+              color: $primary_orange;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.block1 {
+  header {
+    position: relative;
+    border-radius: 20px 0 0 0;
+    overflow: hidden;
+
+    @include md_under {
+      border-radius: 25px 25px 0 0;
+    }
+
+    &::before {
+      content: '';
+      width: 70px;
+      height: 75px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: url(../imgs/white_star.png);
+      background-position: center;
+      background-size: 50% 50%;
+      background-repeat: no-repeat;
+      background-color: #f3a188;
+
+      @include xl_under {
+        display: none;
+      }
+    }
+  }
+  div {
+    width: 100%;
+  }
+
+
+  .job_table {
+
+    thead {
+      border-radius: 0 20px 0 0;
+      display: block;
+
+      @include md_under {
+        border-radius: 0;
+      }
+
+      tr {
+        display: block;
+      }
+    }
+  }
+
+  &::after {
+    content: url(../imgs/tb_girl.png);
+    position: absolute;
+    right: -40px;
+    bottom: -170px;
+    z-index: 1;
+
+    @include under(1800px) {
+      display: none;
+    }
+  }
+}
+
+.block2,
+.block3 {
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -33px;
+    left: 32px;
+    width: 70px;
+    height: 70px;
+    background-image: url(../imgs/white_star2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include xl_under {
+      display: none;
+    }
+
+    .job_table {
+      @include xl_under {
+        display: none;
+      }
+
+      thead {
+        display: none;
+      }
+    }
+
+  }
+  header {
+    border-top: 5px solid #fff;
+    @include xl_under {
+      border-top: 0px
+    }
+  }
+
+  div {
+    border-top: 5px solid #2e3d47;
+    width: 100%;
+
+    @include md_under {
+      border-top: 0;
+    }
+  }
+}
+
+.block3 .job_table tbody .name {
+  width: 330px;
+
+  @include lg_under {
+    width: 211px;
+  }
+
+  @include md_under {
+    width: 150px;
+  }
+  @include sm_under {
+    width: 140px;
+  }
+}
+.block3 header {
+  border-radius: 0 0 0 20px;
+
+  @include md_under {
+    border-radius: 25px 25px 0 0;
+  }
+}
+
+
+.instroduction_imgs {
+  margin: 0 auto;
+  max-width: 1530px;
+  position: relative;
+
+  .left {
+    position: absolute;
+    top: -3380px;
+    left: -150px;
+    width: 213px;
+
+    @include under(1880px) {
+      display: none;
+    }
+  }
+
+  .right {
+    position: absolute;
+    top: -3280px;
+    right: -160px;
+    width: 213px;
+
+    @include under(1880px) {
+      display: none;
+    }
+  }
+}
+.dp_n {
+  display: none;
+}

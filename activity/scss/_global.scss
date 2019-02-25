@@ -1,0 +1,475 @@
+// Personal settings
+
+// 包整個頁面的
+* {
+  font-family: "Microsoft JhengHei" !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+span,
+li {
+  // font-weight: bold;
+}
+
+li {
+  display: inline-block;
+}
+
+// text center
+.t_center {
+  text-align: center;
+}
+
+.t_left {
+  text-align: left;
+}
+
+.t_justify {
+  text-align: justify;
+}
+
+.t_right {
+  text-align: right;
+}
+
+// float
+.fr {
+  float: right;
+}
+
+.fl {
+  float: left;
+}
+
+.position_relative {
+  position: relative;
+}
+
+// header start
+// 樣式
+// color
+.white {
+  color: white;
+}
+
+.black {
+  color: black;
+}
+
+.red {
+  color: $primary_red;
+}
+
+.orange {
+  color: $primary_orange;
+}
+
+.dark_gray {
+  color: #3e3d3d;
+}
+
+.bg_dark_gray {
+  background-color: #3e3d3d;
+}
+
+.bg_light_gray {
+  background-color: #eeeeee;
+}
+
+.bg_peach {
+  background-color: #f3a188;
+  ;
+}
+
+.bg_orange {
+  background-color: $primary_orange;
+}
+
+.bg_red {
+  background-color: $primary_red;
+}
+
+.bg_white {
+  background-color: #fff;
+}
+
+.bg_gray {
+  background-color: $primary_gray;
+}
+
+.bg_yellow {
+  background-color: #EB9C00;
+}
+.bg_orangered {
+  background-color: #e72510;
+}
+
+.font_weight {
+  font-weight: bold;
+}
+
+// 架構
+
+#go_top {
+  position: fixed;
+  display: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: $primary_red;
+  text-decoration: none;
+  color: #fff;
+  z-index: 999;
+  right: 15px;
+  bottom: 15px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.top_bar {
+  max-width: 1530px;
+  margin: auto;
+
+  @include xl_under {
+    display: none;
+  }
+
+  li {
+    padding: 20px;
+    font-size: 19.5px;
+    
+  }
+}
+
+@include xl_over {
+  nav {
+    max-width: 1530px;
+    width: 100%;
+    height: 140px;
+    line-height: 140px;
+    margin: auto;
+  }
+
+  .logo {
+    float: left;
+    margin: 40px 0 40px 150px;
+
+    img {
+      width: 450px;
+    }
+  }
+
+  .hamburger {
+    display: none;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    span {
+      display: block;
+      position: absolute;
+      width: 35px;
+      height: 5px;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      background-color: #000;
+      border-radius: 5px;
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 35px;
+        height: 5px;
+        top: -20px;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        background-color: #000;
+        border-radius: 5px;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 35px;
+        height: 5px;
+        top: 20px;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        background-color: #000;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  .menu {
+    float: right;
+    padding: 0 100px 0 0;
+
+
+    li {
+      float: left;
+    }
+
+    a {
+      font-size: 27px;
+      margin: 0 15px;
+    }
+  }
+}
+
+@include xl_under {
+  nav {
+    margin: auto;
+    line-height: 50px;
+
+    @include xl_under {
+      // height: 100px;
+    }
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    img {
+      width: 350px;
+      margin: 20px 0;
+
+      @include md_under {
+        width: 200px;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  .hamburger {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    cursor: pointer;
+    
+    @include md_under {
+      left: 0;
+      top: 10px;
+    }
+
+    span {
+      display: block;
+      position: absolute;
+      width: 35px;
+      height: 5px;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      background-color: #000;
+      border-radius: 5px;
+
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 35px;
+        height: 5px;
+        top: -20px;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        background-color: #000;
+        border-radius: 5px;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 35px;
+        height: 5px;
+        top: 20px;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        background-color: #000;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  .menu {
+    display: none;
+    margin: auto;
+
+    li {
+
+      display: block;
+    }
+
+    a {
+      display: block;
+      font-size: 20px;
+      padding: 0 15px;
+
+      &:hover {
+        background-color: $primary_gray;
+      }
+    }
+  }
+}
+
+
+// header end
+
+// main start
+main {
+  background: url("../imgs/background.png") no-repeat scroll center center;
+  background-size: cover;
+  // width: 100%;
+  padding-bottom: 50px;
+  display: block;
+}
+.npb {
+  padding-bottom: 0;
+}
+
+.big_title {
+  text-align: center;
+  padding: 65px 0;
+
+  @include sm_under {
+    padding: 30px 0;
+  }
+
+  h3 {
+    font-size: 42px;
+    line-height: 50px; //文字的上下寬度控制
+    letter-spacing: 5px;
+    display: inline-block;
+    position: relative;
+
+    @include sm_under {
+      font-size: 30px;
+      // line-height: 50px;
+    }
+
+    &::before {
+      position: absolute;
+      content: url(../imgs/title_left_star.png);
+      left: -120px;
+
+      @include sm_under {
+        left: -80px;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      content: url(../imgs/title_right_star.png);
+      left: 240px;
+
+      @include sm_under {
+        left: 140px;
+      }
+    }
+  }
+}
+
+//main end
+
+//footer start
+footer {
+  max-width: 1530px;
+  margin: auto;
+
+
+
+  .fl,
+  .fr {
+    margin: 0 50px;
+
+    @include xl_under {
+      margin: 10px auto;
+      float: none;
+      display: block;
+    }
+  }
+
+  .fl {
+    display: flex;
+    justify-content: center;
+  }
+
+  span,
+  p {
+    font-size: 21px;
+    display: inline-block;
+    line-height: 30px;
+    color: #2e3d47;
+
+    @include xl_under {
+      padding: 0px 0;
+      font-size: 16px;
+      display: block;
+      text-align: center;
+      margin: 0 10px;
+    }
+  }
+
+  img {
+    width: 40px;
+    margin: 40px 10px;
+
+    @include xl_under {
+      margin: 0 10px;
+    }
+  }
+
+  br {
+    @include xl_under {
+      display: none;
+    }
+  }
+}
+
+
+
+.phone {
+  padding-top: 30px;
+
+  @include xl_under {
+    padding: 0;
+  }
+}
+
+.copy {
+  padding-bottom: 30px;
+
+  @include xl_under {
+    padding: 0;
+  }
+}
+
+//footer end

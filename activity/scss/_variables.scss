@@ -1,0 +1,42 @@
+// grid
+$breakpoints: (sm: 360,
+md: 720,
+lg: 960,
+xl: 1550);
+$grid: 12;
+$colPadding: 15;
+
+
+$primary_gray: rgb(169, 168, 168);
+$primary_red: rgb(255, 10, 0);
+$primary_orange: #ea5504;
+$primary_yellow: #EB9C00;
+
+$white: #fff;
+$footer_gray: rgb(67, 67, 67);
+$inner_nav_blue: rgb(0, 150, 224);
+$line_yellow: rgb(253, 208, 0);
+$font_cyan: rgb(0, 158, 150);
+$font_orange: rgb(237, 109, 0);
+$font_blue: rgb(38, 158, 226);
+
+
+
+$displays: (db: "block",
+di: "inline",
+dib: "inline-block",
+df: "flex",
+dt: "table",
+dtc: "table-cell"
+);
+
+@each $d_name,
+$display in $displays {
+  .#{$d_name} {
+    display: $display;
+  }
+}
+
+.fw_bold {
+  font-weight: bold;
+}
