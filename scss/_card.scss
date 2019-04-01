@@ -1,0 +1,231 @@
+.blog-card {
+  position: relative;
+  max-width: 360px;
+  width: 100%;
+  height: 450px;
+  margin: 11px;
+  margin-bottom: 40px;
+  margin-top: 10px;
+  color: #fff;
+  float: left;
+  box-shadow: 0px 10px 20px -9px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  transition: all 0.4s;
+  -webkit-overflow-scrolling: touch;
+  cursor: default;
+
+  &:hover {
+    box-shadow: 0px 18px 20px -9px rgba(0, 10, 30, 0.75);
+
+
+    .card-info {
+      opacity: 1;
+      bottom: 100px;
+    }
+  }
+
+  .color-overlay {
+    height: 450px;
+    width: 360px;
+    transition: background-color .3s cubic-bezier(0.33, 0.66, 0.66, 1);
+    -webkit-overflow-scrolling: touch;
+
+    &:hover {
+      background-color: rgba(64, 64, 70, .6);
+    }
+  }
+
+  .card-info {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 50px;
+    font-style: 16px;
+    line-height: 24px;
+    z-index: 20;
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    transition: bottom 0.64s, opacity 0.63s cubic-bezier(0.33, 0.66, 0.66, 1);
+  }
+}
+
+// 一字型
+.bg-img1 {
+  background: url('../imgs/S__6856724.jpg') center no-repeat;
+  background-size: cover;
+}
+
+.bg-img2 {
+  background: url('../imgs/S__6856717.jpg') center no-repeat;
+  background-size: cover;
+}
+
+.bg-img3 {
+  background: url('../imgs/S__6856716.jpg') center no-repeat;
+  background-size: cover;
+}
+
+// L型
+.bg-img4 {
+  background: url('../imgs/S__6856766.jpg') center no-repeat;
+  background-size: cover;
+}
+
+.bg-img5 {
+  background: url('../imgs/S__7921677.png') center no-repeat;
+  background-size: cover;
+}
+
+.bg-img6 {
+  background: url('../imgs/S__6856709.jpg') center no-repeat;
+  background-size: cover;
+}
+
+//五角型
+.bg-img7 {
+  background: url('../imgs/S__7905299.jpg') center no-repeat;
+  background-size: 100%, 100%;
+}
+
+.bg-img8 {
+  background: url('../imgs/S__6856760.jpg') center no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+.bg-img9 {
+  background: url('../imgs/S__7921683.jpg') center no-repeat;
+  background-size: cover;
+}
+
+//浴缸
+.bg-img10 {
+  background: url('../imgs/S__7921674.jpg') center no-repeat;
+  background-size: cover;
+}
+
+.bg-img11 {
+  background: url('../imgs/S__6856725.jpg') center no-repeat;
+  background-size: cover;
+}
+
+.bg-img12 {
+  background: url('../imgs/S__6856761.jpg') center no-repeat;
+  background-size: cover;
+}
+
+//滑軌
+.bg-img13 {
+  background: url('../imgs/S__6856739.jpg') center no-repeat;
+  background-size: cover;
+}
+
+.bg-img14 {
+  background: url('../imgs/S__6856737.jpg') center no-repeat;
+  background-size: cover;
+}
+
+.bg-img15 {
+  background: url('../imgs/S__6856768.jpg') center no-repeat;
+  background-size: cover;
+}
+
+@include max-width(1200px) {
+  .blog-card {
+    max-width: 280px;
+    height: 400px;
+    margin: 11px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+
+    .color-overlay {
+      height: 400px;
+      width: 280px;
+    }
+  }
+}
+
+@include max-width(960px) {
+  .blog-card {
+    max-width: 210px;
+    height: 300px;
+    margin: 10px 5px 40px 5px;
+
+    &:hover {
+
+      .card-info {
+        bottom: 50px;
+      }
+    }
+
+    .color-overlay {
+      width: 210px;
+      height: 300px;
+    }
+
+    .card-info {
+      padding: 0 15px;
+      font-style: 16px;
+      line-height: 24px;
+    }
+  }
+}
+
+@include max-width(720px) {
+
+  .bg-img3,
+  .bg-img6,
+  .bg-img9,
+  .bg-img12,
+  .bg-img15 {
+    display: none;
+  }
+
+  .blog-card {
+    max-width: 240px;
+    height: 300px;
+    margin: 10px 5px 40px 5px;
+
+    &:hover {
+
+      .card-info {
+        bottom: 50px;
+      }
+    }
+
+    .color-overlay {
+      width: 240px;
+      height: 300px;
+    }
+
+    .card-info {
+      padding: 0 15px;
+      font-style: 16px;
+      line-height: 24px;
+    }
+  }
+}
+
+@include max-width(540px) {
+
+  .blog-card {
+    max-width: 95%;
+
+    &:hover {
+      box-shadow: 0px 18px 20px -9px rgba(0, 10, 30, 0.75);
+
+      .card-info {
+        opacity: 1;
+        bottom: 70px;
+      }
+    }
+
+    .color-overlay {
+      width: 100%;
+
+      &:hover {
+        background-color: rgba(64, 64, 70, .6);
+      }
+    }
+  }
+}
