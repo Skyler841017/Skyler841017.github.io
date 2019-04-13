@@ -1,0 +1,26 @@
+// tag
+*,
+*:before,
+*:after {
+  font-family: "Arial", "Microsoft JhengHei" !important;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+//class
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both
+}
