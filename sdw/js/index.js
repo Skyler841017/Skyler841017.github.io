@@ -10,7 +10,7 @@ $(function() {
   });
 
   //scroll
-  $('nav a').click(function() {
+  $('nav li a').click(function() {
     let target = $(this).data('target');
     let topOffset = $(target).offset().top;
     $('html,body').animate({
@@ -18,18 +18,19 @@ $(function() {
     }, 1000, 'easeOutCubic')
   })
 
+  // go top
+  $('#go_top').click(function() {
+    $('html,body').animate({
+      scrollTop: 0
+    }, 1000, 'easeOutCubic');
+  });
+
   //wow.js
   wow = new WOW({
 
   });
   wow.init();
 
-  //go-top
-  $('#go-top').click(function() {
-    $('html,body').animate({
-      scrollTop: 0
-    }, 1000, 'easeOutCubic');
-  });
 
   // fix top
   let navHeight = $('header').outerHeight(true);
