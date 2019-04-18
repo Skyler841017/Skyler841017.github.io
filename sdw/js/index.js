@@ -2,12 +2,12 @@
 $(function() {
 
   //jQuery easing
-  jQuery.easing['jswing'] = jQuery.easing['swing'];
-  jQuery.extend(jQuery.easing, {
-    easeOutCubic: function(x, t, b, c, d) {
-      return c * ((t = t / d - 1) * t * t + 1) + b;
-    },
-  });
+  // jQuery.easing['jswing'] = jQuery.easing['swing'];
+  // jQuery.extend(jQuery.easing, {
+  //   easeOutCubic: function(x, t, b, c, d) {
+  //     return c * ((t = t / d - 1) * t * t + 1) + b;
+  //   },
+  // });
 
   //scroll
   $('nav li a').click(function() {

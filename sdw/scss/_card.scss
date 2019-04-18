@@ -51,82 +51,82 @@
 
 // 一字型
 .bg-img1 {
-  background: url('../imgs/S__8552502.jpg') center no-repeat;
+  background: url('../imgs/card1.1.jpg') center no-repeat;
   background-size: cover;
 }
 
 .bg-img2 {
-  background: url('../imgs/S__8552503.jpg') center no-repeat;
+  background: url('../imgs/card1.2.jpg') center no-repeat;
   background-size: cover;
 }
 
 .bg-img3 {
-  background: url('../imgs/S__8552494.jpg') center no-repeat;
+  background: url('../imgs/card1.3.jpg') center no-repeat;
   background-size: cover;
 }
 
 // L型
 .bg-img4 {
-  background: url('../imgs/S__6856766.jpg') center no-repeat;
+  background: url('../imgs/card2.1.jpg') center no-repeat;
   background-size: cover;
 }
 
 .bg-img5 {
-  background: url('../imgs/S__7921677.png') center no-repeat;
+  background: url('../imgs/card2.2.jpg') center no-repeat;
   background-size: cover;
 }
 
 .bg-img6 {
-  background: url('../imgs/S__6856709.jpg') center no-repeat;
+  background: url('../imgs/card2.3.jpg') center no-repeat;
   background-size: cover;
 }
 
 //五角型
 .bg-img7 {
-  background: url('../imgs/S__7905299.jpg') center no-repeat;
+  background: url('../imgs/card3.1.jpg') center no-repeat;
   background-size: 100%, 100%;
 }
 
 .bg-img8 {
-  background: url('../imgs/S__6856760.jpg') center no-repeat;
+  background: url('../imgs/card3.2.jpg') center no-repeat;
   background-size: cover;
   background-position: center top;
 }
 
 .bg-img9 {
-  background: url('../imgs/S__7921683.jpg') center no-repeat;
+  background: url('../imgs/card3.3.jpg') center no-repeat;
   background-size: cover;
 }
 
 //浴缸
 .bg-img10 {
-  background: url('../imgs/S__7921674.jpg') center no-repeat;
+  background: url('../imgs/card4.1.jpg') center no-repeat;
   background-size: cover;
 }
 
 .bg-img11 {
-  background: url('../imgs/S__6856725.jpg') center no-repeat;
+  background: url('../imgs/card4.2.jpg') center no-repeat;
   background-size: cover;
 }
 
 .bg-img12 {
-  background: url('../imgs/S__6856761.jpg') center no-repeat;
+  background: url('../imgs/card4.3.jpg') center no-repeat;
   background-size: cover;
 }
 
 //滑軌
 .bg-img13 {
-  background: url('../imgs/S__6856739.jpg') center no-repeat;
+  background: url('../imgs/card5.1.jpg') center no-repeat;
   background-size: cover;
 }
 
 .bg-img14 {
-  background: url('../imgs/S__6856737.jpg') center no-repeat;
+  background: url('../imgs/card5.2.jpg') center no-repeat;
   background-size: cover;
 }
 
 .bg-img15 {
-  background: url('../imgs/S__6856768.jpg') center no-repeat;
+  background: url('../imgs/card5.3.jpg') center no-repeat;
   background-size: cover;
 }
 
@@ -209,7 +209,7 @@
 @include max-width(540px) {
 
   .blog-card {
-    max-width: 95%;
+    max-width: 96%;
 
     &:hover {
       box-shadow: 0px 18px 20px -9px rgba(0, 10, 30, 0.75);
